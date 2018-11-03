@@ -1,0 +1,41 @@
+body {
+    background: whitesmoke;
+    font-family: georgia;
+    text-align: center;
+    padding-top: 10px;
+}
+h1 {
+    font-size: 40px;
+}
+canvas {
+    display: block;
+    margin: 30px auto 10px;
+    border-radius: 5px;
+}
+button {
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 40px;
+    padding: 5px;
+    margin: 10px;
+}
+#predict {
+    border: none;
+    border-radius: 5px;
+    width: 160px;
+    background-color: chocolate;
+}
+#newPrediction {
+    border: none;
+    border-radius: 5px;
+    width: 160px;
+    background-color: mediumblue;
+}
+#prediction {
+    display: inline-block;
+    width: 30.4%;
+    font-size: 20px;
+    background-color: white;
+}

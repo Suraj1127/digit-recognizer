@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+	<title>Digit Recognizer</title>
+    <link rel="stylesheet" href="{% static 'canvas/css/style.css' %}">
+</head>
+<body>
+    <h1>Digit OCR</h1>
+    <div id="prediction"></div>
+    <canvas width="400" height="400"></canvas>
+    <form id='data-url' method="post">
+        {% csrf_token %}
+	    <input type="hidden" name="data_url" id="data_url" value="suraj">
+    </form>
+    <button id="predict">Predict</button>
+    <button id="newPrediction">New</button>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="{% static 'canvas/js/canvas.js' %}"></script>
+</body>
+</html>
