@@ -8,11 +8,12 @@ Description: This module implements ANN(Artificial Neural Networks) from scratch
 
 import random
 
+import pickle
 import csv
 
 import numpy as np
 
-from utilities.util_functions import sigmoid, OneHotEncoder
+from .utilities.util_functions import sigmoid, OneHotEncoder
 
 
 class ANN:
@@ -221,6 +222,13 @@ def main():
 
     # Train the model from the file train/train.csv by using 10 epochs.
     ocr_ann_model.train('train/train.csv', 10)
+
+    # save weights and bias as pickle files
+    with open('parameters/weights.pickle', 'wb') as f:
+        pickle.dump(ocr_ann_model.w, f, pickle.HIGHEST_PROTOCOL)
+
+    with open('parameters/bias.pickle', 'wb') as f:
+        pickle.dump(ocr_ann_model.b, f, pickle.HIGHEST_PROTOCOL)
 
 
 if __name__ == "__main__":
