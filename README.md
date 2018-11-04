@@ -8,6 +8,7 @@ Here, users can draw a digit in the web page, which is implemented by HTML canva
 - Python 3
 - Numpy
 - Django 1.11
+- Pillow
 
 ## Dependencies
  Install Django and Numpy by executing the following commands in the terminal.
@@ -15,7 +16,7 @@ Here, users can draw a digit in the web page, which is implemented by HTML canva
 $ sudo apt-get install python-pip  
 $ sudo pip install numpy scipy
 $ sudo pip install django==1.11
-
+$ sudo pip install Pillow
 ```
 
 ## Instructions:
@@ -23,7 +24,7 @@ $ sudo pip install django==1.11
 ```
 ./main.py
 ```
-* Click the [link](http://127.0.0.1:8000)(http://127.0.0.1:8000) and the web application would start running.
+* Open the [link](http://127.0.0.1:8000)(http://127.0.0.1:8000) and the web application would start running.
 
 ## Further Enhancements:
 * We have used deep neural network architecture here.  We can use Convolutional Neural Network for AI which would increase accuracy of our prediction.

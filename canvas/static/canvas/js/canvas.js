@@ -96,6 +96,7 @@ $('#newPrediction').on('click', function(event){
     $('#prediction').html('');
     context.fillStyle = "black";
     context.fillRect(0, 0, $canvas.get(0).width, $canvas.get(0).height);
+    $('#prediction').css({'padding': '0px', 'border': '0px'});
 });
 
 // AJAX for predicting
